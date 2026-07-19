@@ -1,0 +1,15 @@
+<div class="input-group">
+    <div class="input-group">
+        <div class="input-group-prepend">                            
+            <button type="button" class="btn btn-primary btn-sm" (click)="downQuantity()">-</button>
+        </div>
+            <input type="text" [(ngModel)]="quantity" (keyup)="changeQuantity($event)"> 
+                <!--[(ngModel)] estamos conectados ida y vuelta, "la cajita de banana"-->
+                <!--(keyup) evento-->
+        <div class="input-group-append">
+            <button type="button" class="btn btn-primary btn-sm" (click)="upQuantity()">+</button>  
+        </div>
+    </div>
+
+
+</div>
